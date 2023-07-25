@@ -1,0 +1,24 @@
+name: fair-tms
+channels:
+  - defaults
+dependencies:
+  - python==3.10.*
+  
+  # General requirements for making plots and managing results
+  - pandas==1.*
+  - matplotlib==3.*
+  
+  # Requirements for data format descriptions
+  - pydantic==1.10.*
+  - jsonschema
+  
+  # Requirements for the web API lesson
+  - requests
+  
+  # Putting Jupyter in this environment
+  - jupyterlab
+  
+  # Put any requirements from pypi here
+  - pip
+  - pip:
+      - jupyterlab-spellchecker
